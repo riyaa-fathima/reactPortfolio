@@ -1,10 +1,11 @@
+@import "../../style/variables";
 .nav-cont{
     width: fit-content;
     background-color: black  ;
     border-radius: 20px;
 }
 .nav-link{
-    color: whitesmoke;
+    color: $fontColor;
     text-decoration: none;
 }
 .nav-button{

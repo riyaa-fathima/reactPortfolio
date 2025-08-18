@@ -1,0 +1,51 @@
+@import "../../style/variables";
+@import "../../style/mixin";
+.skill-cont {
+  @include flex();
+  width: 100%;
+}
+.skills {
+  width: 50%;
+  @include flex(left);
+  flex-direction: column;
+  .skill-head {
+    width: 390px;
+  }
+}
+.skill-each {
+  width: 90%;
+  padding: 15px;
+  @include flex(left, space-between);
+  border-bottom: 1px solid $fontColor;
+  .skill-title {
+    @include flex(left, space-between);
+
+    .arrow {
+      transform: rotate(180deg);
+      &.open{
+        transform: rotate(0deg);
+      }
+    }
+    .skill-content{
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+
+      &.open{
+        max-height: 200px;
+      }
+    }
+  }
+}
+.skill-img {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  @include flex();
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
