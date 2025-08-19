@@ -7,6 +7,9 @@
 .nav-link{
     color: $fontColor;
     text-decoration: none;
+    &.active{
+        color: red;
+    }
 }
 .nav-button{
     

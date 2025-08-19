@@ -43,9 +43,9 @@ function Skill() {
             <div key={index} className="skill-each">
               <div className="skill-title" onClick={() => handleToggle(index)}>
                 <h3>{skill.title}</h3>
-                <span className={`arrow ${toggle === index ? "open" : ""}`}>
+                <div className={`arrow ${toggle === index ? "open" : ""}`}>
                   <RiArrowDropDownLine size={30} />
-                </span>
+                </div>
               </div>
 
               {toggle === index && (
@@ -59,10 +59,10 @@ function Skill() {
           </div>
         ))}
 
+      </div>
         <div className="skill-img">
           <img src={code} alt="code" />
         </div>
-      </div>
     </div>
   );
 }
