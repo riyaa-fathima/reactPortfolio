@@ -1,0 +1,6 @@
+@import "../style/mixin";
+
+.layout-cont{
+    @include flex();
+    flex-direction: column;
+}

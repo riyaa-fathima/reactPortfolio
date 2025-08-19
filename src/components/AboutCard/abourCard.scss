@@ -1,0 +1,18 @@
+@import "../../style/mixin";
+.about-card{
+    width: 200px;
+    height: 250px;
+    border-radius: 3px;
+    background-color: #D0FF71;
+    color: black;
+    @include flex();
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+
+    h3{
+        @include text(2rem, 500);
+
+    }
+
+}
