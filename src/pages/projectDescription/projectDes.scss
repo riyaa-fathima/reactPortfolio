@@ -1,0 +1,20 @@
+@import "../../style/mixin";
+
+.detail-page{
+    padding: 50px;
+    min-height: 100vh;
+}
+
+.detail-image{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+.detail-title{
+    @include text(2rem, bold);
+    color: white;
+}
+.detail-description{
+    color: white;
+}
