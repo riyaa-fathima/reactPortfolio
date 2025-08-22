@@ -1,6 +1,11 @@
 @import "../style/mixin";
 
-.layout-cont{
-    @include flex();
-    flex-direction: column;
+.layout-cont {
+  @include flex();
+  flex-direction: column;
+}
+@media screen and (max-width: 600px) {
+  .lay-cont {
+    width: 100%;
+  }
 }

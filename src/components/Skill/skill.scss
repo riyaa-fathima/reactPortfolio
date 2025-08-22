@@ -49,3 +49,25 @@
     object-fit: cover;
   }
 }
+
+@media (max-width: 900px) {
+  .skill-cont{
+    flex-direction: column-reverse;
+    margin-top: 50px;
+    gap: 10px;
+  }
+
+  .skills{
+    width: 90%;
+  }
+  .skill-img{
+    width: 100%;
+  }
+  @media screen and (max-width:441px) {
+    .skills{
+      .skill-head{
+        width: 100%;
+      }
+    }
+  }
+}

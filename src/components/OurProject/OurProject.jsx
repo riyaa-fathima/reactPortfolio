@@ -15,7 +15,7 @@ function OurProject({data}) {
         </h2>
       </div>
       <div className="Cards-cont">
-        {project.map((project) => (
+        {data.project.map((project) => (
           <Link to={`${project.id}`}>
           <ProjectCard
             title={project.title}
