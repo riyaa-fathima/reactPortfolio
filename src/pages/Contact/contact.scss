@@ -1,4 +1,8 @@
 @import "../../style/mixin";
+@import "../../style/variables";
+
+
+$color:yellow;
 
 .contact-cont {
   width: 100%;
@@ -20,3 +24,49 @@
     height: 100%;
   }
 }
+
+.contact-title{
+  h1{
+    @include text(4rem, 900);
+  }
+  p{
+    @include text(1rem, 300)
+  }
+}
+.contact-form{
+  @include flex();
+  flex-direction: column;
+  color: yellow;
+
+  .form-top{
+    @include flex();
+    width: 100%;
+    gap: 10px;
+  }
+}
+.form-input{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+  input{
+    border-radius: 30px;
+    border: none;
+  }
+   textarea{
+    border-radius: 30px;
+    border: none;
+    height: 120px;
+  }
+
+}
+ .form-btm{
+  width: 100%;
+}
+  .contact-btn{
+    width: 100px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: black;
+    color: yellow;
+  }

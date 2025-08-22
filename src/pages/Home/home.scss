@@ -1,6 +1,18 @@
-.main-cont{
-    display: flex;
+.main-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .hero-img {
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  }
+  .hero-name{
+    h1{
+        font-size: 50px;
+    }
+    font-size: 66px;
+  }
 }

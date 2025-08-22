@@ -13,31 +13,34 @@ function NavBar() {
   };
   return (
     <>
-      <Navbar className="nav-cont">
+      <Navbar expand="lg" className="nav-cont ">
         <Container>
-          <Nav className="d-flex gap-1">
-            <NavLink className="nav-link" to="/">
-              Home
-            </NavLink>
-            <NavLink className="nav-link" to="/about">
-              About
-            </NavLink>
-            <NavLink className="nav-link" to="/project">
-              Project
-            </NavLink>
-            <NavLink className="nav-link" to="/blog">
-              Blog
-            </NavLink>
-          </Nav>
-          <Nav>
-            <Button
-              className="nav-button"
-              variant="light"
-              onClick={handleClick}
-            >
-              contact
-            </Button>
-          </Nav>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" className="bg-primary " />
+          <Navbar.Collapse id="basic-navbar-nav" >
+            <Nav className=" nav-des d-flex gap-1">
+              <NavLink className="nav-link" to="/">
+                Home
+              </NavLink>
+              <NavLink className="nav-link" to="/about">
+                About
+              </NavLink>
+              <NavLink className="nav-link" to="/project">
+                Project
+              </NavLink>
+              <NavLink className="nav-link" to="/blog">
+                Blog
+              </NavLink>
+            </Nav>
+            <Nav>
+              <Button
+                className="nav-button"
+                variant="light"
+                onClick={handleClick}
+              >
+                contact
+              </Button>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </>

@@ -10,10 +10,10 @@ function AboutMe() {
   return (
     <div className="about-cont">
       <Container>
-        <Row>
+        <Row className="row-cont">
           <Col className="about-content">
             <h1> ABOUT ME</h1>
-            <div>
+            <div className="about-me">
               <h3>Riya fathima</h3>
               <p>
                 I’m a MERN Stack developer passionate about creating modern,

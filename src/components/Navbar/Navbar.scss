@@ -8,9 +8,20 @@
     color: $fontColor;
     text-decoration: none;
     &.active{
-        color: red;
+        color: red !important;
     }
+    justify-content: center;
+    align-items: center;
 }
 .nav-button{
-    
+    border-radius: 30px;
+}
+@media screen and (max-width: 768px) {
+    .nav-cont{
+        width: 100%;
+    }
+    .nav-des{
+        align-items: center;
+        justify-content: center;
+    }
 }
