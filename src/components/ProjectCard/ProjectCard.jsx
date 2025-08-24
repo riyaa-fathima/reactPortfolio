@@ -4,7 +4,7 @@ import "./projectCard.scss";
 
 function ProjectCard({title,subtitle}) {
   return (
-    <div className="project-card">
+    <div className="project-card h-100">
       <div className="project-img">
         <img src={code} alt="code" />
       </div>

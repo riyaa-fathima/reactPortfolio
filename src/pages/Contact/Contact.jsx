@@ -22,13 +22,13 @@ function Contact() {
   return (
     <div className="contact-cont">
       <Container>
-        <Row>
+        <Row className="rrow-cont">
           <Col className="cont-img">
             <div className="cont-img-riya">
               <img src={riya} alt="contact-image" />
             </div>
           </Col>
-          <Col>
+          <Col className="col-cont">
             <div className="contact-title">
               <h1>Lets work together</h1>
               <p>

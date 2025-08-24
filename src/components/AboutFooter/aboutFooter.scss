@@ -1,0 +1,96 @@
+.about-me {
+  background: #0d0d0d;
+  color: #fff;
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  .description {
+    font-size: 1rem;
+    color: #bbb;
+
+    .highlight {
+      color: #a7ff83;
+      font-weight: 600;
+    }
+  }
+
+  .about-box {
+    background: #141414;
+    border: 1px solid #222;
+    border-radius: 12px;
+  }
+
+  .stats-row {
+    margin-top: 1.5rem;
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #a7ff83;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  }
+
+  .contact-info {
+    p {
+      margin: 0.3rem 0;
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+
+    .socials {
+      margin-top: 0.5rem;
+
+      a {
+        color: #a7ff83;
+        font-size: 1.3rem;
+        margin-right: 1rem;
+        transition: color 0.3s;
+
+       
+      }
+    }
+  }
+
+  .email-box {
+    background: #d7f75b;
+    color: #000;
+    border-radius: 12px;
+    text-align: center;
+
+    h5 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: #000;
+      font-weight: 600;
+      text-decoration: none;
+
+    
+    }
+
+    p {
+      margin: 0.2rem 0;
+    }
+  }
+}
+@media screen and (max-width: 768px){
+    .about-me{
+        width: 500px;
+    }
+    .email-box{
+        width: 500px;
+    }
+}

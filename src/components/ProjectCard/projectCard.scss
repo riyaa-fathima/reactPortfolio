@@ -9,7 +9,7 @@
 
   .project-img {
     width: 500px;
-    height: 50%;
+    height: 400px;
     overflow: hidden;
     @include flex();
     img {
@@ -18,8 +18,30 @@
     }
   }
   .project-des{
+    
     h1{
-        @include text(3rem, 500)
+        @include text(3rem, 500);
+        color: aliceblue;
+    }
+    h3{
+      color: antiquewhite;
     }
   }
 }
+@media screen and (max-width: 768px)
+ {
+  .project-card {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  .project-img {
+    width: 300px;
+    height: 200px;
+   
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+ 
+}}

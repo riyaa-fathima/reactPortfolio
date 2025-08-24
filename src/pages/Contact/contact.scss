@@ -70,3 +70,20 @@ $color:yellow;
     background-color: black;
     color: yellow;
   }
+
+  @media screen and (max-width: 768px){
+    .contact-cont {
+      flex-direction: column;
+      .rrow-cont{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .col-cont{
+      width: 300px;
+    }
+    .cont-img-riya{
+      width: 300px;
+      height: 350px;
+    }
+  }
